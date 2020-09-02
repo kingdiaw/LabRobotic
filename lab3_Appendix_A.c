@@ -42,8 +42,8 @@ void setup() // run once
     pwm_out(PWM1, 0);
     pwm_out(PWM2, 0);
     Serial2_println("Setup Done");
-    Serial2_println("Press PB1(RB6) to START");
-    while (PB1);
+    Serial2_println("Press PB1(RB6) to START LINE FOLLOWER");
+    Serial2_println("Press PB1 (RB7) to Check Sensor");
 }
 
 //Prototype Function
@@ -59,32 +59,20 @@ byte turn_right(void);
 
 void loop() // run repeatedly
 {
-//    if(timerUp(0)){
-//        timerSet(0,500);
-//        sensorArray = 0;
-//        sensorArray |=(INP_RE1<<4)|(INP_RE0<<3)|(INP_RA3<<2)|(INP_RA2<<1)|(INP_RA1); 
-//        //sprintf(buf,"Sensor Array: %d\r\n",sensorArray);
-//        //Serial2_println(buf);
-//        //sprintf(buf,"Sensor:%d%d%d%d%d",INP_RE1,INP_RE0,INP_RA3,INP_RA2,INP_RA1);
-//        //Serial2_println(buf);
-//    }
-    
-    while(linefollower(3));
-    forward();
-    delay(600);
-    stop();
-    while(turn_left());
-    while(linefollower(4));
-    forward();
-    delay(600);
-    stop();
-    while(turn_right());
-    while(linefollower(2));
-    forward();
-    delay(600);
-    stop();
-    while(1);
-    
+    while(1){
+        if(PB1 == 0){
+            while(linefollower(3));        
+        }
+        else if(PB2 == 0){
+            while(1){
+                LED1 = INP_RE1;
+                LED2 = INP_RE0;
+                LED3 = INP_RA3;
+                LED4 = INP_RA2;
+                LED5 = INP_RA1;
+            }            
+        }
+    }
 }
 
 void forward(void) {
