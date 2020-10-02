@@ -40,6 +40,6 @@ void loop(){
     unsigned int rv=analogRead(RV1);
     sprintf(buf,"analog reading:%d",rv);
     Serial_println(buf);
-    delay(1000);
+    delay(500);
     
 }
