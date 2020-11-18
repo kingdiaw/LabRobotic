@@ -3,6 +3,18 @@
 [d edition pro ]
 [d chip 18F45K22 ]
 [d frameptr 4065 ]
+"25 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
+[v _setup setup `(v  1 e 0 0 ]
+"56
+[v _loop loop `(v  1 e 0 0 ]
+"97
+[v _read_distance read_distance `(ui  1 e 2 0 ]
+"117
+[v _forward forward `(v  1 e 0 0 ]
+"128
+[v _stop stop `(v  1 e 0 0 ]
+"137
+[v _reverse reverse `(v  1 e 0 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abdiv.c
 [v ___abdiv __abdiv `(c  1 e 1 0 ]
 "4 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\abmod.c
@@ -35,8 +47,6 @@
 [v ___awtofl __awtofl `(d  1 e 3 0 ]
 "32 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\awtoft.c
 [v ___awtoft __awtoft `(f  1 e 3 0 ]
-"492 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
-[v _sprintf sprintf `(i  1 e 2 0 ]
 "63 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\double.c
 [v ___flpack __flpack `(d  1 e 3 0 ]
 "88 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fladd.c
@@ -133,11 +143,7 @@
 [v _Read_b_eep Read_b_eep `(uc  1 e 1 0 ]
 "30 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\pic18\plib\EEP\write_B.c
 [v _Write_b_eep Write_b_eep `(v  1 e 0 0 ]
-"20 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\lab1.c
-[v _setup setup `(v  1 e 0 0 ]
-"39
-[v _loop loop `(v  1 e 0 0 ]
-"52 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.c
+"52 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
 [v _InterruptHandlerHigh InterruptHandlerHigh `II(v  1 e 0 0 ]
 "187
 [v _init init `(v  1 e 0 0 ]
@@ -347,6 +353,12 @@
 [v _attachInterrupt attachInterrupt `(v  1 e 0 0 ]
 "3236
 [v _detachInterrupt detachInterrupt `(v  1 e 0 0 ]
+"21 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
+[v _buf buf `[32]uc  1 e 32 0 ]
+"22
+[v _data data `uc  1 e 1 0 ]
+"23
+[v _data_old data_old `uc  1 e 1 0 ]
 "47 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f45k22.h
 [v _ANSELA ANSELA `VEuc  1 e 1 @3896 ]
 "91
@@ -946,8 +958,6 @@
 [v _TRISD TRISD `VEuc  1 e 1 @3989 ]
 "9099
 [v _TRISDbits TRISDbits `VES143  1 e 1 @3989 ]
-"9288
-[v _TRISE TRISE `VEuc  1 e 1 @3990 ]
 [s S912 . 1 `uc 1 TRISE0 1 0 :1:0 
 `uc 1 TRISE1 1 0 :1:1 
 `uc 1 TRISE2 1 0 :1:2 
@@ -1011,7 +1021,7 @@
 ]
 [u S2071 . 1 `S2042 1 . 1 0 `S2051 1 . 1 0 `S2053 1 . 1 0 `S2056 1 . 1 0 `S2059 1 . 1 0 `S2062 1 . 1 0 `S2065 1 . 1 0 `S2068 1 . 1 0 ]
 [v _PIE3bits PIE3bits `VES2071  1 e 1 @4003 ]
-[s S3525 . 1 `uc 1 RD 1 0 :1:0 
+[s S3619 . 1 `uc 1 RD 1 0 :1:0 
 `uc 1 WR 1 0 :1:1 
 `uc 1 WREN 1 0 :1:2 
 `uc 1 WRERR 1 0 :1:3 
@@ -1021,11 +1031,11 @@
 `uc 1 EEPGD 1 0 :1:7 
 ]
 "10536
-[s S3534 . 1 `uc 1 . 1 0 :6:0 
+[s S3628 . 1 `uc 1 . 1 0 :6:0 
 `uc 1 EEFS 1 0 :1:6 
 ]
-[u S3537 . 1 `S3525 1 . 1 0 `S3534 1 . 1 0 ]
-[v _EECON1bits EECON1bits `VES3537  1 e 1 @4006 ]
+[u S3631 . 1 `S3619 1 . 1 0 `S3628 1 . 1 0 ]
+[v _EECON1bits EECON1bits `VES3631  1 e 1 @4006 ]
 "10580
 [v _EECON2 EECON2 `VEuc  1 e 1 @4007 ]
 "10599
@@ -1537,11 +1547,7 @@
 [v _TXIF TXIF `VEb  1 e 0 @31988 ]
 "20273
 [v _TXIP TXIP `VEb  1 e 0 @31996 ]
-"354 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
-[v _dpowers dpowers `C[5]ui  1 s 10 dpowers ]
-"18 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\lab1.c
-[v _buf buf `[32]uc  1 e 32 0 ]
-"19 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.c
+"19 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
 [v _TmrRxd1 TmrRxd1 `uc  1 e 1 0 ]
 [v _TmrRxd2 TmrRxd2 `uc  1 e 1 0 ]
 [v _HMSec HMSec `uc  1 e 1 0 ]
@@ -1644,7 +1650,7 @@
 `uc 1 bit6 1 0 :1:6 
 `uc 1 bit7 1 0 :1:7 
 ]
-"559 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.h
+"559 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.h
 [u S30 . 1 `S21 1 Bit 1 0 `uc 1 Byte 1 0 ]
 [v _Flags Flags `S30  1 e 1 0 ]
 [s S33 . 1 `uc 1 hold 1 0 :1:0 
@@ -1656,7 +1662,7 @@
 "570
 [u S39 . 1 `S33 1 s 1 0 ]
 [v _kstate kstate `S39  1 e 1 0 ]
-"447 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.c
+"447 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
 [v _main main `(v  1 e 0 0 ]
 {
 "458
@@ -1671,25 +1677,109 @@
 {
 "289
 } 0
-"20 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\lab1.c
+"25 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
 [v _setup setup `(v  1 e 0 0 ]
 {
-"37
+"44
 } 0
-"2999 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.c
-[v _pwm_out pwm_out `(v  1 e 0 0 ]
-{
-[v pwm_out@ch ch `uc  1 a 1 wreg ]
-[v pwm_out@ch ch `uc  1 a 1 wreg ]
-[v pwm_out@dutyValue dutyValue `ui  1 p 2 17 ]
-"3002
-[v pwm_out@ch ch `uc  1 a 1 19 ]
-"3022
-} 0
-"2889
+"2889 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
 [v _pwm_on pwm_on `(v  1 e 0 0 ]
 {
 "2992
+} 0
+"2259
+[v _Serial2_begin Serial2_begin `(v  1 e 0 0 ]
+{
+[v Serial2_begin@speed speed `ul  1 p 4 41 ]
+"2269
+} 0
+"2047
+[v _uart_brg_set uart_brg_set `(v  1 e 0 0 ]
+{
+[v uart_brg_set@com com `uc  1 a 1 wreg ]
+"2049
+[v uart_brg_set@brgh brgh `uc  1 a 1 40 ]
+[v uart_brg_set@brgl brgl `uc  1 a 1 39 ]
+"2047
+[v uart_brg_set@com com `uc  1 a 1 wreg ]
+[v uart_brg_set@speed speed `ul  1 p 4 30 ]
+"2051
+[v uart_brg_set@com com `uc  1 a 1 38 ]
+"2071
+} 0
+"56 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
+[v _loop loop `(v  1 e 0 0 ]
+{
+"58
+[v loop@distance_cm distance_cm `ui  1 a 2 15 ]
+"95
+} 0
+"404 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
+[v _timerUp timerUp `(uc  1 e 1 0 ]
+{
+[v timerUp@index index `uc  1 a 1 wreg ]
+[v timerUp@index index `uc  1 a 1 wreg ]
+"406
+[v timerUp@index index `uc  1 a 1 17 ]
+"409
+} 0
+"396
+[v _timerSet timerSet `(v  1 e 0 0 ]
+{
+[v timerSet@index index `uc  1 a 1 wreg ]
+[v timerSet@index index `uc  1 a 1 wreg ]
+[v timerSet@value value `ul  1 p 4 30 ]
+"398
+[v timerSet@index index `uc  1 a 1 34 ]
+"402
+} 0
+"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
+[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+{
+"11
+[v ___lldiv@quotient quotient `ul  1 a 4 25 ]
+"12
+[v ___lldiv@counter counter `uc  1 a 1 29 ]
+"8
+[v ___lldiv@dividend dividend `ul  1 p 4 17 ]
+[v ___lldiv@divisor divisor `ul  1 p 4 21 ]
+"31
+} 0
+"137 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
+[v _reverse reverse `(v  1 e 0 0 ]
+{
+"144
+} 0
+"97
+[v _read_distance read_distance `(ui  1 e 2 0 ]
+{
+"98
+[v read_distance@duration duration `l  1 a 4 25 ]
+"99
+[v read_distance@distance distance `ui  1 a 2 29 ]
+"116
+} 0
+"325 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
+[v _pulseIn pulseIn `(ul  1 e 4 0 ]
+{
+[v pulseIn@pin pin `uc  1 a 1 wreg ]
+"327
+[v pulseIn@timeOut timeOut `ul  1 a 4 17 ]
+[v pulseIn@runTime runTime `ul  1 a 4 8 ]
+"328
+[v pulseIn@timeHigh timeHigh `ui  1 a 2 6 ]
+[v pulseIn@timeLow timeLow `ui  1 a 2 4 ]
+"334
+[v pulseIn@ap ap `[1]*.39v  1 a 2 0 ]
+"329
+[v pulseIn@highByte highByte `uc  1 a 1 3 ]
+[v pulseIn@lowByte lowByte `uc  1 a 1 2 ]
+"325
+[v pulseIn@pin pin `uc  1 a 1 wreg ]
+[v pulseIn@state state `uc  1 p 1 33 ]
+"327
+[v pulseIn@pin pin `uc  1 a 1 16 ]
+"384
 } 0
 "494
 [v _pinMode pinMode `(v  1 e 0 0 ]
@@ -1712,123 +1802,144 @@
 [v analogInput@ANx ANx `uc  1 a 1 19 ]
 "485
 } 0
-"2076
-[v _Serial_begin Serial_begin `(v  1 e 0 0 ]
+"312
+[v _millis millis `(ul  1 e 4 0 ]
 {
-[v Serial_begin@speed speed `ul  1 p 4 11 ]
-"2091
+"315
 } 0
-"2047
-[v _uart_brg_set uart_brg_set `(v  1 e 0 0 ]
+"15 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\Umul32.c
+[v ___lmul __lmul `(ul  1 e 4 0 ]
 {
-[v uart_brg_set@com com `uc  1 a 1 wreg ]
-"2049
-[v uart_brg_set@brgh brgh `uc  1 a 1 10 ]
-[v uart_brg_set@brgl brgl `uc  1 a 1 9 ]
-"2047
-[v uart_brg_set@com com `uc  1 a 1 wreg ]
-[v uart_brg_set@speed speed `ul  1 p 4 0 ]
-"2051
-[v uart_brg_set@com com `uc  1 a 1 8 ]
-"2071
+"17
+[v ___lmul@product product `ul  1 a 4 25 ]
+"15
+[v ___lmul@multiplier multiplier `ul  1 p 4 17 ]
+[v ___lmul@multiplicand multiplicand `ul  1 p 4 21 ]
+"129
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lldiv.c
-[v ___lldiv __lldiv `(ul  1 e 4 0 ]
+"1448 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
+[v _digitalRead digitalRead `(uc  1 e 1 0 ]
 {
-"11
-[v ___lldiv@quotient quotient `ul  1 a 4 25 ]
-"12
-[v ___lldiv@counter counter `uc  1 a 1 29 ]
-"8
-[v ___lldiv@dividend dividend `ul  1 p 4 17 ]
-[v ___lldiv@divisor divisor `ul  1 p 4 21 ]
-"31
+[v digitalRead@pin pin `uc  1 a 1 wreg ]
+"1450
+[v digitalRead@di di `uc  1 a 1 18 ]
+"1448
+[v digitalRead@pin pin `uc  1 a 1 wreg ]
+"1450
+[v digitalRead@pin pin `uc  1 a 1 17 ]
+"1502
 } 0
-"39 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\lab1.c
-[v _loop loop `(v  1 e 0 0 ]
+"1507
+[v _digitalWrite digitalWrite `(v  1 e 0 0 ]
 {
-"40
-[v loop@rv rv `ui  1 a 2 0 ]
-"45
+[v digitalWrite@pin pin `uc  1 a 1 wreg ]
+[v digitalWrite@pin pin `uc  1 a 1 wreg ]
+[v digitalWrite@value value `uc  1 p 1 17 ]
+[v digitalWrite@pin pin `uc  1 a 1 18 ]
+"1563
 } 0
-"492 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\doprnt.c
-[v _sprintf sprintf `(i  1 e 2 0 ]
+"44 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\fttol.c
+[v ___fttol __fttol `(l  1 e 4 0 ]
 {
-[s S3514 . 5 `*.39Cuc 1 _cp 3 0 `ui 1 _len 2 3 ]
-"533
-[u S3517 . 5 `ui 1 _val 2 0 `S3514 1 _str 5 0 ]
-[v sprintf@_val _val `S3517  1 a 5 10 ]
-"494
-[v sprintf@ap ap `[1]*.39v  1 a 2 6 ]
-"499
-[v sprintf@c c `c  1 a 1 15 ]
-"506
-[v sprintf@prec prec `c  1 a 1 9 ]
-"508
-[v sprintf@flag flag `uc  1 a 1 8 ]
-"492
-[v sprintf@sp sp `*.39uc  1 p 2 0 ]
-[v sprintf@f f `*.25Cuc  1 p 2 2 ]
-"1550
+"47
+[v ___fttol@lval lval `ul  1 a 4 1 ]
+"46
+[v ___fttol@exp1 exp1 `uc  1 a 1 5 ]
+[v ___fttol@sign1 sign1 `uc  1 a 1 0 ]
+"44
+[v ___fttol@f1 f1 `f  1 p 3 6 ]
+"73
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwmod.c
-[v ___lwmod __lwmod `(ui  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftmul.c
+[v ___ftmul __ftmul `(f  1 e 3 0 ]
 {
-"11
-[v ___lwmod@counter counter `uc  1 a 1 28 ]
-"8
-[v ___lwmod@dividend dividend `ui  1 p 2 24 ]
-[v ___lwmod@divisor divisor `ui  1 p 2 26 ]
-"26
+"65
+[v ___ftmul@f3_as_product f3_as_product `um  1 a 3 45 ]
+"64
+[v ___ftmul@sign sign `uc  1 a 1 49 ]
+[v ___ftmul@cntr cntr `uc  1 a 1 48 ]
+[v ___ftmul@exp exp `uc  1 a 1 44 ]
+"62
+[v ___ftmul@f1 f1 `f  1 p 3 35 ]
+[v ___ftmul@f2 f2 `f  1 p 3 38 ]
+"157
 } 0
-"8 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\lwdiv.c
-[v ___lwdiv __lwdiv `(ui  1 e 2 0 ]
+"49 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\ftdiv.c
+[v ___ftdiv __ftdiv `(f  1 e 3 0 ]
 {
-"11
-[v ___lwdiv@quotient quotient `ui  1 a 2 22 ]
-"12
-[v ___lwdiv@counter counter `uc  1 a 1 21 ]
-"8
-[v ___lwdiv@dividend dividend `ui  1 p 2 17 ]
-[v ___lwdiv@divisor divisor `ui  1 p 2 19 ]
-"31
+"52
+[v ___ftdiv@f3 f3 `f  1 a 3 1 ]
+"51
+[v ___ftdiv@sign sign `uc  1 a 1 5 ]
+[v ___ftdiv@exp exp `uc  1 a 1 4 ]
+[v ___ftdiv@cntr cntr `uc  1 a 1 0 ]
+"49
+[v ___ftdiv@f1 f1 `f  1 p 3 50 ]
+[v ___ftdiv@f2 f2 `f  1 p 3 53 ]
+"78
 } 0
-"295 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB ROBOTIC\LAB_ROBOTIC.X\picuno.c
-[v _delay delay `(v  1 e 0 0 ]
+"42 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\altoft.c
+[v ___altoft __altoft `(f  1 e 3 0 ]
 {
-"297
-[v delay@i i `ui  1 a 2 19 ]
-"295
-[v delay@ms ms `ui  1 p 2 17 ]
-"306
+"44
+[v ___altoft@sign sign `uc  1 a 1 34 ]
+[v ___altoft@exp exp `uc  1 a 1 33 ]
+"42
+[v ___altoft@c c `l  1 p 4 25 ]
+"57
 } 0
-"1568
-[v _analogRead analogRead `(ui  1 e 2 0 ]
+"62 C:\Program Files (x86)\Microchip\xc8\v1.33\sources\common\float.c
+[v ___ftpack __ftpack `(f  1 e 3 0 ]
 {
-[v analogRead@chn chn `uc  1 a 1 wreg ]
-"1570
-[v analogRead@adc adc `ui  1 a 2 20 ]
-"1568
-[v analogRead@chn chn `uc  1 a 1 wreg ]
-"1587
+[v ___ftpack@arg arg `um  1 p 3 17 ]
+[v ___ftpack@exp exp `uc  1 p 1 20 ]
+[v ___ftpack@sign sign `uc  1 p 1 21 ]
+"86
 } 0
-"2171
-[v _Serial_println Serial_println `(v  1 e 0 0 ]
+"117 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\Appendix_lab5.c
+[v _forward forward `(v  1 e 0 0 ]
 {
-[v Serial_println@str str `*.39Cuc  1 p 2 19 ]
-"2179
+"126
 } 0
-"2105
-[v _Serial_putc Serial_putc `(v  1 e 0 0 ]
+"2999 C:\Users\King Diaw (Lenovo)\Documents\GitHub\LabRobotic\LAB_ROBOTIC\LAB_ROBOTIC.X\picuno.c
+[v _pwm_out pwm_out `(v  1 e 0 0 ]
 {
-[v Serial_putc@d d `uc  1 a 1 wreg ]
-"2107
-[v Serial_putc@p p `uc  1 a 1 17 ]
-"2105
-[v Serial_putc@d d `uc  1 a 1 wreg ]
-"2112
-[v Serial_putc@d d `uc  1 a 1 18 ]
-"2132
+[v pwm_out@ch ch `uc  1 a 1 wreg ]
+[v pwm_out@ch ch `uc  1 a 1 wreg ]
+[v pwm_out@dutyValue dutyValue `ui  1 p 2 17 ]
+"3002
+[v pwm_out@ch ch `uc  1 a 1 19 ]
+"3022
+} 0
+"2377
+[v _Serial2_read Serial2_read `(uc  1 e 1 0 ]
+{
+"2379
+[v Serial2_read@d d `uc  1 a 1 17 ]
+"2392
+} 0
+"2349
+[v _Serial2_println Serial2_println `(v  1 e 0 0 ]
+{
+[v Serial2_println@str str `*.25Cuc  1 p 2 19 ]
+"2357
+} 0
+"2283
+[v _Serial2_putc Serial2_putc `(v  1 e 0 0 ]
+{
+[v Serial2_putc@d d `uc  1 a 1 wreg ]
+"2285
+[v Serial2_putc@p p `uc  1 a 1 17 ]
+"2283
+[v Serial2_putc@d d `uc  1 a 1 wreg ]
+"2290
+[v Serial2_putc@d d `uc  1 a 1 18 ]
+"2310
+} 0
+"2278
+[v _Serial2_available Serial2_available `(uc  1 e 1 0 ]
+{
+"2281
 } 0
 "187
 [v _init init `(v  1 e 0 0 ]
