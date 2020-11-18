@@ -72,15 +72,18 @@ void loop() // run repeatedly
     if(Serial2_available()){
         LED4 ^= 1;
         data = Serial2_read();
+        Serial2_putc(data);
     }
     
     if(data_old != data){
         
         if(data == 'f'){
             forward();
+            Serial2_println("Forward");
         }
         else if(data == 'b'){
             reverse();
+            Serial2_println("backward");
         }
         
         //Continue your code HERE
