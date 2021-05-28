@@ -11,8 +11,8 @@ Version 3.2 HI-TECH Software Intermediate Code
 "562
 [u S1181 `S1182 1 ]
 [n S1181 . s ]
-"667
-[v _Serial_begin `(v ~T0 @X0 0 ef1`ul ]
+"688
+[v _Serial2_begin `(v ~T0 @X0 0 ef1`ul ]
 "725
 [v _pwm_on `(v ~T0 @X0 0 ef ]
 "591
@@ -21,14 +21,10 @@ Version 3.2 HI-TECH Software Intermediate Code
 [v _TRISD `Vuc ~T0 @X0 0 e@3989 ]
 "8846
 [v _TRISC `Vuc ~T0 @X0 0 e@3988 ]
-"9288
-[v _TRISE `Vuc ~T0 @X0 0 e@3990 ]
 "727 picuno.h
 [v _pwm_out `(v ~T0 @X0 0 ef2`uc`ui ]
-"205 C:\Program Files (x86)\Microchip\xc8\v1.33\include\stdio.h
-[v _sprintf `(i ~T0 @X0 0 e1v`*uc`*Cuc ]
-"674 picuno.h
-[v _Serial_println `(v ~T0 @X0 0 ef1`*Cuc ]
+"696
+[v _Serial2_println `(v ~T0 @X0 0 ef1`*Cuc ]
 "6660 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f45k22.h
 [s S416 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
 [n S416 . RB0 RB1 RB2 RB3 RB4 RB5 RB6 RB7 ]
@@ -58,10 +54,94 @@ Version 3.2 HI-TECH Software Intermediate Code
 [n S415 . . . . . . . . . ]
 "6724
 [v _PORTBbits `VS415 ~T0 @X0 0 e@3969 ]
-"594 picuno.h
-[v _analogRead `(ui ~T0 @X0 0 ef1`uc ]
-"606
-[v _delay `(v ~T0 @X0 0 ef1`ui ]
+"612 picuno.h
+[v _timerUp `(uc ~T0 @X0 0 ef1`uc ]
+"611
+[v _timerSet `(v ~T0 @X0 0 ef2`uc`ul ]
+"53 Appendix_lab5.c
+[v _read_distance `(ui ~T0 @X0 0 ef ]
+"8176 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f45k22.h
+[s S499 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S499 . LATD0 LATD1 LATD2 LATD3 LATD4 LATD5 LATD6 LATD7 ]
+"8186
+[s S500 :1 `uc 1 ]
+[n S500 . LD0 ]
+"8189
+[s S501 :1 `uc 1 :1 `uc 1 ]
+[n S501 . . LD1 ]
+"8193
+[s S502 :2 `uc 1 :1 `uc 1 ]
+[n S502 . . LD2 ]
+"8197
+[s S503 :3 `uc 1 :1 `uc 1 ]
+[n S503 . . LD3 ]
+"8201
+[s S504 :4 `uc 1 :1 `uc 1 ]
+[n S504 . . LD4 ]
+"8205
+[s S505 :5 `uc 1 :1 `uc 1 ]
+[n S505 . . LD5 ]
+"8209
+[s S506 :6 `uc 1 :1 `uc 1 ]
+[n S506 . . LD6 ]
+"8213
+[s S507 :7 `uc 1 :1 `uc 1 ]
+[n S507 . . LD7 ]
+"8175
+[u S498 `S499 1 `S500 1 `S501 1 `S502 1 `S503 1 `S504 1 `S505 1 `S506 1 `S507 1 ]
+[n S498 . . . . . . . . . . ]
+"8218
+[v _LATDbits `VS498 ~T0 @X0 0 e@3980 ]
+"689 picuno.h
+[v _Serial2_available `(uc ~T0 @X0 0 ef ]
+"699
+[v _Serial2_read `(uc ~T0 @X0 0 ef ]
+"691
+[v _Serial2_putc `(v ~T0 @X0 0 ef1`uc ]
+"48 Appendix_lab5.c
+[v _forward `(v ~T0 @X0 0 ef ]
+"50
+[v _reverse `(v ~T0 @X0 0 ef ]
+"599 picuno.h
+[v _digitalWrite `(v ~T0 @X0 0 ef2`uc`uc ]
+[v F8800 `(v ~T0 @X0 1 tf1`ul ]
+"147 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18.h
+[v __delay `JF8800 ~T0 @X0 0 e ]
+[p i __delay ]
+"609 picuno.h
+[v _pulseIn `(ul ~T0 @X0 0 e1v`uc`uc ]
+"7912 C:\Program Files (x86)\Microchip\xc8\v1.33\include\pic18f45k22.h
+[s S479 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 :1 `uc 1 ]
+[n S479 . LATB0 LATB1 LATB2 LATB3 LATB4 LATB5 LATB6 LATB7 ]
+"7922
+[s S480 :1 `uc 1 ]
+[n S480 . LB0 ]
+"7925
+[s S481 :1 `uc 1 :1 `uc 1 ]
+[n S481 . . LB1 ]
+"7929
+[s S482 :2 `uc 1 :1 `uc 1 ]
+[n S482 . . LB2 ]
+"7933
+[s S483 :3 `uc 1 :1 `uc 1 ]
+[n S483 . . LB3 ]
+"7937
+[s S484 :4 `uc 1 :1 `uc 1 ]
+[n S484 . . LB4 ]
+"7941
+[s S485 :5 `uc 1 :1 `uc 1 ]
+[n S485 . . LB5 ]
+"7945
+[s S486 :6 `uc 1 :1 `uc 1 ]
+[n S486 . . LB6 ]
+"7949
+[s S487 :7 `uc 1 :1 `uc 1 ]
+[n S487 . . LB7 ]
+"7911
+[u S478 `S479 1 `S480 1 `S481 1 `S482 1 `S483 1 `S484 1 `S485 1 `S486 1 `S487 1 ]
+[n S478 . . . . . . . . . . ]
+"7954
+[v _LATBbits `VS478 ~T0 @X0 0 e@3978 ]
 [; ;htc.h: 21: extern const char __xc8_OPTIM_SPEED;
 [; ;htc.h: 24: extern void __builtin_software_breakpoint(void);
 [; ;pic18f45k22.h: 47: extern volatile unsigned char ANSELA @ 0xF38;
@@ -8494,94 +8574,317 @@ Version 3.2 HI-TECH Software Intermediate Code
 [; ;picuno.h: 752: void INT2_CallBack(void);
 [; ;picuno.h: 753: void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 [; ;picuno.h: 754: extern void (*INT2_InterruptHandler)(void);
-"18 lab1.c
+"21 Appendix_lab5.c
 [v _buf `uc ~T0 @X0 -> 32 `i e ]
-[; ;lab1.c: 18: byte buf[32];
-"20
+[; ;Appendix_lab5.c: 21: byte buf[32];
+"22
+[v _data `uc ~T0 @X0 1 e ]
+[; ;Appendix_lab5.c: 22: byte data;
+"23
+[v _data_old `uc ~T0 @X0 1 e ]
+[; ;Appendix_lab5.c: 23: byte data_old;
+"25
 [v _setup `(v ~T0 @X0 1 ef ]
+"26
 {
-[; ;lab1.c: 20: void setup(){
+[; ;Appendix_lab5.c: 25: void setup()
+[; ;Appendix_lab5.c: 26: {
 [e :U _setup ]
 [f ]
-[; ;lab1.c: 21: Serial_begin(9600);
-"21
-[e ( _Serial_begin (1 -> -> -> 9600 `i `l `ul ]
-[; ;lab1.c: 22: pwm_on();
-"22
-[e ( _pwm_on ..  ]
-[; ;lab1.c: 23: pinMode(8, 0x00);
-"23
-[e ( _pinMode (2 , -> -> 8 `i `uc -> -> 0 `i `uc ]
-[; ;lab1.c: 24: pinMode(9, 0x00);
-"24
-[e ( _pinMode (2 , -> -> 9 `i `uc -> -> 0 `i `uc ]
-[; ;lab1.c: 25: pinMode(10, 0x00);
-"25
-[e ( _pinMode (2 , -> -> 10 `i `uc -> -> 0 `i `uc ]
-[; ;lab1.c: 26: pinMode(12, 0x00);
-"26
-[e ( _pinMode (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
-[; ;lab1.c: 27: pinMode(14, 0x01);
+[; ;Appendix_lab5.c: 27: Serial2_begin(9600);
 "27
-[e ( _pinMode (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
-[; ;lab1.c: 28: pinMode(15, 0x01);
+[e ( _Serial2_begin (1 -> -> -> 9600 `i `l `ul ]
+[; ;Appendix_lab5.c: 28: pwm_on();
 "28
-[e ( _pinMode (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
-[; ;lab1.c: 29: TRISD &= 0b11110011;
+[e ( _pwm_on ..  ]
+[; ;Appendix_lab5.c: 29: pinMode(8, 0x00);
 "29
-[e =& _TRISD -> -> 243 `i `uc ]
-[; ;lab1.c: 30: TRISC &= 0b10001111;
+[e ( _pinMode (2 , -> -> 8 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 30: pinMode(9, 0x00);
 "30
-[e =& _TRISC -> -> 143 `i `uc ]
-[; ;lab1.c: 31: TRISE |= 0b00000011;
+[e ( _pinMode (2 , -> -> 9 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 31: pinMode(10, 0x00);
 "31
-[e =| _TRISE -> -> 3 `i `uc ]
-[; ;lab1.c: 32: pwm_out(3, 0);
+[e ( _pinMode (2 , -> -> 10 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 32: pinMode(12, 0x00);
 "32
-[e ( _pwm_out (2 , -> -> 3 `i `uc -> -> 0 `i `ui ]
-[; ;lab1.c: 33: pwm_out(2, 0);
+[e ( _pinMode (2 , -> -> 12 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 33: pinMode(14, 0x01);
 "33
-[e ( _pwm_out (2 , -> -> 2 `i `uc -> -> 0 `i `ui ]
-[; ;lab1.c: 34: sprintf(buf,"Setup Done,PRESS PB1 to continue");
+[e ( _pinMode (2 , -> -> 14 `i `uc -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 34: pinMode(15, 0x01);
 "34
-[e ( _sprintf (1 , &U _buf :s 1C ]
-[; ;lab1.c: 35: Serial_println(buf);
+[e ( _pinMode (2 , -> -> 15 `i `uc -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 35: pinMode(4,0x00);
 "35
-[e ( _Serial_println (1 -> &U _buf `*Cuc ]
-[; ;lab1.c: 36: while(PORTBbits.RB6);
+[e ( _pinMode (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 36: pinMode(5,0x01);
 "36
+[e ( _pinMode (2 , -> -> 5 `i `uc -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 37: TRISD &= 0b11110011;
+"37
+[e =& _TRISD -> -> 243 `i `uc ]
+[; ;Appendix_lab5.c: 38: TRISC &= 0b10001111;
+"38
+[e =& _TRISC -> -> 143 `i `uc ]
+[; ;Appendix_lab5.c: 39: pwm_out(3, 0);
+"39
+[e ( _pwm_out (2 , -> -> 3 `i `uc -> -> 0 `i `ui ]
+[; ;Appendix_lab5.c: 40: pwm_out(2, 0);
+"40
+[e ( _pwm_out (2 , -> -> 2 `i `uc -> -> 0 `i `ui ]
+[; ;Appendix_lab5.c: 41: Serial2_println("Setup Done");
+"41
+[e ( _Serial2_println (1 :s 1C ]
+[; ;Appendix_lab5.c: 42: Serial2_println("Press PB1(RB6) to START");
+"42
+[e ( _Serial2_println (1 :s 2C ]
+[; ;Appendix_lab5.c: 43: while (PORTBbits.RB6);
+"43
 [e $U 1184  ]
 [e :U 1185 ]
 [e :U 1184 ]
 [e $ != -> . . _PORTBbits 0 6 `i -> -> -> 0 `i `Vuc `i 1185  ]
 [e :U 1186 ]
-[; ;lab1.c: 37: }
-"37
+[; ;Appendix_lab5.c: 44: }
+"44
 [e :UE 1183 ]
 }
-"39
+[; ;Appendix_lab5.c: 48: void forward(void);
+[; ;Appendix_lab5.c: 49: void stop(void);
+[; ;Appendix_lab5.c: 50: void reverse(void);
+[; ;Appendix_lab5.c: 51: void left(void);
+[; ;Appendix_lab5.c: 52: void right(void);
+[; ;Appendix_lab5.c: 53: unsigned int read_distance(void);
+"56
 [v _loop `(v ~T0 @X0 1 ef ]
+"57
 {
-[; ;lab1.c: 39: void loop(){
+[; ;Appendix_lab5.c: 56: void loop()
+[; ;Appendix_lab5.c: 57: {
 [e :U _loop ]
 [f ]
-"40
-[v _rv `ui ~T0 @X0 1 a ]
-[; ;lab1.c: 40: unsigned int rv=analogRead(4);
-[e = _rv ( _analogRead (1 -> -> 4 `i `uc ]
-[; ;lab1.c: 41: sprintf(buf,"analog reading:%d",rv);
-"41
-[e ( _sprintf (1 , (. , &U _buf :s 2C _rv ]
-[; ;lab1.c: 42: Serial_println(buf);
-"42
-[e ( _Serial_println (1 -> &U _buf `*Cuc ]
-[; ;lab1.c: 43: delay(1000);
-"43
-[e ( _delay (1 -> -> 1000 `i `ui ]
-[; ;lab1.c: 45: }
-"45
+"58
+[v _distance_cm `ui ~T0 @X0 1 a ]
+[; ;Appendix_lab5.c: 58: unsigned int distance_cm;
+[; ;Appendix_lab5.c: 61: if(timerUp(0))
+"61
+[e $ ! != -> ( _timerUp (1 -> -> 0 `i `uc `i -> -> -> 0 `i `uc `i 1188  ]
+[; ;Appendix_lab5.c: 62: {
+"62
+{
+[; ;Appendix_lab5.c: 63: timerSet(0,70);
+"63
+[e ( _timerSet (2 , -> -> 0 `i `uc -> -> -> 70 `i `l `ul ]
+[; ;Appendix_lab5.c: 64: distance_cm = read_distance();
+"64
+[e = _distance_cm ( _read_distance ..  ]
+"65
+}
+[e :U 1188 ]
+[; ;Appendix_lab5.c: 65: }
+[; ;Appendix_lab5.c: 67: if(timerUp(1)){
+"67
+[e $ ! != -> ( _timerUp (1 -> -> 1 `i `uc `i -> -> -> 0 `i `uc `i 1189  ]
+{
+[; ;Appendix_lab5.c: 68: timerSet(1,100);
+"68
+[e ( _timerSet (2 , -> -> 1 `i `uc -> -> -> 100 `i `l `ul ]
+[; ;Appendix_lab5.c: 69: LATDbits.LATD2 ^= 1;
+"69
+[e =^ . . _LATDbits 0 2 -> -> 1 `i `uc ]
+"70
+}
+[e :U 1189 ]
+[; ;Appendix_lab5.c: 70: }
+[; ;Appendix_lab5.c: 72: if(Serial2_available()){
+"72
+[e $ ! != -> ( _Serial2_available ..  `i -> -> -> 0 `i `uc `i 1190  ]
+{
+[; ;Appendix_lab5.c: 73: LATDbits.LATD3 ^= 1;
+"73
+[e =^ . . _LATDbits 0 3 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 74: data = Serial2_read();
+"74
+[e = _data ( _Serial2_read ..  ]
+[; ;Appendix_lab5.c: 75: Serial2_putc(data);
+"75
+[e ( _Serial2_putc (1 _data ]
+"76
+}
+[e :U 1190 ]
+[; ;Appendix_lab5.c: 76: }
+[; ;Appendix_lab5.c: 78: if(data_old != data){
+"78
+[e $ ! != -> _data_old `i -> _data `i 1191  ]
+{
+[; ;Appendix_lab5.c: 80: if(data == 'f'){
+"80
+[e $ ! == -> _data `ui -> 102 `ui 1192  ]
+{
+[; ;Appendix_lab5.c: 81: forward();
+"81
+[e ( _forward ..  ]
+[; ;Appendix_lab5.c: 82: Serial2_println("Forward");
+"82
+[e ( _Serial2_println (1 :s 3C ]
+"83
+}
+[; ;Appendix_lab5.c: 83: }
+[e $U 1193  ]
+"84
+[e :U 1192 ]
+[; ;Appendix_lab5.c: 84: else if(data == 'b'){
+[e $ ! == -> _data `ui -> 98 `ui 1194  ]
+{
+[; ;Appendix_lab5.c: 85: reverse();
+"85
+[e ( _reverse ..  ]
+[; ;Appendix_lab5.c: 86: Serial2_println("backward");
+"86
+[e ( _Serial2_println (1 :s 4C ]
+"87
+}
+[e :U 1194 ]
+"91
+[e :U 1193 ]
+[; ;Appendix_lab5.c: 87: }
+[; ;Appendix_lab5.c: 91: data_old = data;
+[e = _data_old _data ]
+"92
+}
+[e :U 1191 ]
+[; ;Appendix_lab5.c: 92: }
+[; ;Appendix_lab5.c: 95: }
+"95
 [e :UE 1187 ]
 }
-[p f _sprintf 8388736 ]
-[a 1C 83 101 116 117 112 32 68 111 110 101 44 80 82 69 83 83 32 80 66 49 32 116 111 32 99 111 110 116 105 110 117 101 0 ]
-[a 2C 97 110 97 108 111 103 32 114 101 97 100 105 110 103 58 37 100 0 ]
+"97
+[v _read_distance `(ui ~T0 @X0 1 ef ]
+{
+[; ;Appendix_lab5.c: 97: unsigned int read_distance(void){
+[e :U _read_distance ]
+[f ]
+"98
+[v _duration `l ~T0 @X0 1 a ]
+"99
+[v _distance `ui ~T0 @X0 1 a ]
+[; ;Appendix_lab5.c: 98: long duration;
+[; ;Appendix_lab5.c: 99: unsigned int distance;
+[; ;Appendix_lab5.c: 101: digitalWrite(4,0x00);
+"101
+[e ( _digitalWrite (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 102: _delay((unsigned long)((2)*(64000000UL/4000000.0)));
+"102
+[e ( __delay (1 -> * -> -> 2 `i `d / -> -> 64000000 `ul `d .4000000.0 `ul ]
+[; ;Appendix_lab5.c: 105: digitalWrite(4,0x01);
+"105
+[e ( _digitalWrite (2 , -> -> 4 `i `uc -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 106: _delay((unsigned long)((10)*(64000000UL/4000000.0)));
+"106
+[e ( __delay (1 -> * -> -> 10 `i `d / -> -> 64000000 `ul `d .4000000.0 `ul ]
+[; ;Appendix_lab5.c: 107: digitalWrite(4,0x00);
+"107
+[e ( _digitalWrite (2 , -> -> 4 `i `uc -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 110: duration = pulseIn(5,0x01);
+"110
+[e = _duration -> ( _pulseIn (1 , -> -> 5 `i `uc -> -> 1 `i `uc `l ]
+[; ;Appendix_lab5.c: 113: distance = (float)duration*0.034/2;
+"113
+[e = _distance -> / * -> -> _duration `f `d .0.034 -> -> 2 `i `d `ui ]
+[; ;Appendix_lab5.c: 115: return distance;
+"115
+[e ) _distance ]
+[e $UE 1195  ]
+[; ;Appendix_lab5.c: 116: }
+"116
+[e :UE 1195 ]
+}
+"117
+[v _forward `(v ~T0 @X0 1 ef ]
+{
+[; ;Appendix_lab5.c: 117: void forward(void) {
+[e :U _forward ]
+[f ]
+[; ;Appendix_lab5.c: 119: LATBbits.LATB4 = 1;
+"119
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 120: LATBbits.LATB2 = 0;
+"120
+[e = . . _LATBbits 0 2 -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 121: pwm_out(3, 255);
+"121
+[e ( _pwm_out (2 , -> -> 3 `i `uc -> -> 255 `i `ui ]
+[; ;Appendix_lab5.c: 123: LATBbits.LATB0 = 1;
+"123
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 124: LATBbits.LATB1 = 0;
+"124
+[e = . . _LATBbits 0 1 -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 125: pwm_out(2, 255);
+"125
+[e ( _pwm_out (2 , -> -> 2 `i `uc -> -> 255 `i `ui ]
+[; ;Appendix_lab5.c: 126: }
+"126
+[e :UE 1196 ]
+}
+"128
+[v _stop `(v ~T0 @X0 1 ef ]
+{
+[; ;Appendix_lab5.c: 128: void stop(void) {
+[e :U _stop ]
+[f ]
+[; ;Appendix_lab5.c: 129: pwm_out(3, 0);
+"129
+[e ( _pwm_out (2 , -> -> 3 `i `uc -> -> 0 `i `ui ]
+[; ;Appendix_lab5.c: 130: LATBbits.LATB4 = 1;
+"130
+[e = . . _LATBbits 0 4 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 131: LATBbits.LATB2 = 1;
+"131
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 132: pwm_out(2, 0);
+"132
+[e ( _pwm_out (2 , -> -> 2 `i `uc -> -> 0 `i `ui ]
+[; ;Appendix_lab5.c: 133: LATBbits.LATB0 = 1;
+"133
+[e = . . _LATBbits 0 0 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 134: LATBbits.LATB1 = 1;
+"134
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 135: }
+"135
+[e :UE 1197 ]
+}
+"137
+[v _reverse `(v ~T0 @X0 1 ef ]
+{
+[; ;Appendix_lab5.c: 137: void reverse(void) {
+[e :U _reverse ]
+[f ]
+[; ;Appendix_lab5.c: 138: LATBbits.LATB4 = 0;
+"138
+[e = . . _LATBbits 0 4 -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 139: LATBbits.LATB2 = 1;
+"139
+[e = . . _LATBbits 0 2 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 140: pwm_out(3, 255);
+"140
+[e ( _pwm_out (2 , -> -> 3 `i `uc -> -> 255 `i `ui ]
+[; ;Appendix_lab5.c: 141: LATBbits.LATB0 = 0;
+"141
+[e = . . _LATBbits 0 0 -> -> 0 `i `uc ]
+[; ;Appendix_lab5.c: 142: LATBbits.LATB1 = 1;
+"142
+[e = . . _LATBbits 0 1 -> -> 1 `i `uc ]
+[; ;Appendix_lab5.c: 143: pwm_out(2, 255);
+"143
+[e ( _pwm_out (2 , -> -> 2 `i `uc -> -> 255 `i `ui ]
+[; ;Appendix_lab5.c: 144: }
+"144
+[e :UE 1198 ]
+}
+[a 1C 83 101 116 117 112 32 68 111 110 101 0 ]
+[a 3C 70 111 114 119 97 114 100 0 ]
+[a 4C 98 97 99 107 119 97 114 100 0 ]
+[a 2C 80 114 101 115 115 32 80 66 49 40 82 66 54 41 32 116 111 32 83 84 65 82 84 0 ]

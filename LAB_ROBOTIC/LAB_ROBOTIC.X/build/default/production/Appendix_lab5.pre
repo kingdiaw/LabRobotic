@@ -1,5 +1,5 @@
 
-# 1 "lab1.c"
+# 1 "Appendix_lab5.c"
 
 # 21 "C:\Program Files (x86)\Microchip\xc8\v1.33\include\htc.h"
 extern const char __xc8_OPTIM_SPEED;
@@ -10763,11 +10763,14 @@ void INT2_CallBack(void);
 void INT2_SetInterruptHandler(void (* InterruptHandler)(void));
 extern void (*INT2_InterruptHandler)(void);
 
-# 18 "lab1.c"
+# 21 "Appendix_lab5.c"
 byte buf[32];
+byte data;
+byte data_old;
 
-void setup(){
-Serial_begin(9600);
+void setup()
+{
+Serial2_begin(9600);
 pwm_on();
 pinMode(8, 0x00);
 pinMode(9, 0x00);
@@ -10775,20 +10778,114 @@ pinMode(10, 0x00);
 pinMode(12, 0x00);
 pinMode(14, 0x01);
 pinMode(15, 0x01);
+pinMode(4,0x00);
+pinMode(5,0x01);
 TRISD &= 0b11110011;
 TRISC &= 0b10001111;
-TRISE |= 0b00000011;
 pwm_out(3, 0);
 pwm_out(2, 0);
-sprintf(buf,"Setup Done,PRESS PB1 to continue");
-Serial_println(buf);
-while(PORTBbits.RB6);
+Serial2_println("Setup Done");
+Serial2_println("Press PB1(RB6) to START");
+while (PORTBbits.RB6);
 }
 
-void loop(){
-unsigned int rv=analogRead(4);
-sprintf(buf,"analog reading:%d",rv);
-Serial_println(buf);
-delay(1000);
+
+
+void forward(void);
+void stop(void);
+void reverse(void);
+void left(void);
+void right(void);
+unsigned int read_distance(void);
+
+
+void loop()
+{
+unsigned int distance_cm;
+
+
+if(timerUp(0))
+{
+timerSet(0,70);
+distance_cm = read_distance();
+}
+
+if(timerUp(1)){
+timerSet(1,100);
+LATDbits.LATD2 ^= 1;
+}
+
+if(Serial2_available()){
+LATDbits.LATD3 ^= 1;
+data = Serial2_read();
+Serial2_putc(data);
+}
+
+if(data_old != data){
+
+if(data == 'f'){
+forward();
+Serial2_println("Forward");
+}
+else if(data == 'b'){
+reverse();
+Serial2_println("backward");
+}
+
+
+
+data_old = data;
+}
+
 
 }
+
+unsigned int read_distance(void){
+long duration;
+unsigned int distance;
+
+digitalWrite(4,0x00);
+_delay((unsigned long)((2)*(64000000UL/4000000.0)));
+
+
+digitalWrite(4,0x01);
+_delay((unsigned long)((10)*(64000000UL/4000000.0)));
+digitalWrite(4,0x00);
+
+
+duration = pulseIn(5,0x01);
+
+
+distance = (float)duration*0.034/2;
+
+return distance;
+}
+void forward(void) {
+
+LATBbits.LATB4 = 1;
+LATBbits.LATB2 = 0;
+pwm_out(3, 255);
+
+LATBbits.LATB0 = 1;
+LATBbits.LATB1 = 0;
+pwm_out(2, 255);
+}
+
+void stop(void) {
+pwm_out(3, 0);
+LATBbits.LATB4 = 1;
+LATBbits.LATB2 = 1;
+pwm_out(2, 0);
+LATBbits.LATB0 = 1;
+LATBbits.LATB1 = 1;
+}
+
+void reverse(void) {
+LATBbits.LATB4 = 0;
+LATBbits.LATB2 = 1;
+pwm_out(3, 255);
+LATBbits.LATB0 = 0;
+LATBbits.LATB1 = 1;
+pwm_out(2, 255);
+}
+
